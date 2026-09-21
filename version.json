@@ -1,33 +1,19 @@
 {
-  "version": "1.1.37",
+  "version": "1.1.38-test.1",
   "channel": "stable",
   "minimumVersion": "1.0.0",
   "mandatory": false,
-  "showNotification": false,
-  "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.37/TajirDZ_1.1.37_Windows_Modern_Setup.exe",
-  "sha256": "",
-  "size": "",
+  "showNotification": true,
+  "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.38-test.1/test-package.zip",
+  "sha256": "b7a2f5f183400e649a541e32d40fff3964bcd490be57e0d3c7405596fd1d1932",
+  "size": "532",
   "releaseDate": "2026-09-21",
-  "changelog": "الإصدار الحالي المستقر.",
+  "changelog": "حزمة اختبار آلية التنزيل.",
   "differential": false,
   "patchUrl": "",
   "releaseStatus": "active",
-  "releaseReason": "Feature",
+  "releaseReason": "Experimental",
   "requiresMigration": false,
   "restartRequired": true,
-  "allowPauseResume": true,
-  "compatibility": {
-    "windows": {
-      "modern": {
-        "enabled": true,
-        "versions": ["10", "11"],
-        "architecture": "x64"
-      },
-      "legacy": {
-        "enabled": false,
-        "versions": ["7", "8", "8.1"],
-        "architecture": "x64"
-      }
-    }
-  }
+  "allowPauseResume": true
 }
