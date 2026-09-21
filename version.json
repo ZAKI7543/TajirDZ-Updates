@@ -1,19 +1,56 @@
 {
-  "version": "1.1.37",
-  "channel": "stable",
+  "version": "1.1.38-beta.1",
+  "channel": "beta",
   "minimumVersion": "1.0.0",
   "mandatory": false,
-  "showNotification": false,
-  "downloadUrl": "",
-  "sha256": "",
-  "size": "",
+  "showNotification": true,
+  "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.38-test.1/test-package.zip",
+  "sha256": "b7a2f5f183400e649a541e32d40fff3964bcd490be57e0d3c7405596fd1d1932",
+  "size": "532",
   "releaseDate": "2026-09-21",
-  "changelog": "الإصدار الحالي المستقر.",
+  "changelog": "إصدار تجريبي للمطور — قناة Beta.",
   "differential": false,
   "patchUrl": "",
   "releaseStatus": "active",
-  "releaseReason": "Feature",
+  "releaseReason": "Experimental",
   "requiresMigration": false,
   "restartRequired": true,
-  "allowPauseResume": true
+  "allowPauseResume": true,
+  "beta": {
+    "enabled": true,
+    "developerOnly": true,
+    "requiresAccessToken": true,
+    "tokenIssuer": "TajirDZ-Developer",
+    "activationWindow": {
+      "startsAt": "2026-09-01T00:00:00Z",
+      "endsAt": "2027-06-30T00:00:00Z"
+    },
+    "allowedVersions": [
+      ">=1.1.38"
+    ],
+    "revokedTokenIds": [],
+    "revokedPublicKeyFingerprints": [],
+    "blockedBuilds": []
+  },
+  "compatibility": {
+    "windows": {
+      "modern": {
+        "enabled": true,
+        "versions": [
+          "10",
+          "11"
+        ],
+        "architecture": "x64"
+      },
+      "legacy": {
+        "enabled": false,
+        "versions": [
+          "7",
+          "8",
+          "8.1"
+        ],
+        "architecture": "x64"
+      }
+    }
+  }
 }
