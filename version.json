@@ -1,0 +1,33 @@
+{
+  "version": "1.1.37",
+  "channel": "stable",
+  "minimumVersion": "1.0.0",
+  "mandatory": false,
+  "showNotification": false,
+  "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.37/TajirDZ_1.1.37_Windows_Modern_Setup.exe",
+  "sha256": "",
+  "size": "",
+  "releaseDate": "2026-09-21",
+  "changelog": "الإصدار الحالي المستقر.",
+  "differential": false,
+  "patchUrl": "",
+  "releaseStatus": "active",
+  "releaseReason": "Feature",
+  "requiresMigration": false,
+  "restartRequired": true,
+  "allowPauseResume": true,
+  "compatibility": {
+    "windows": {
+      "modern": {
+        "enabled": true,
+        "versions": ["10", "11"],
+        "architecture": "x64"
+      },
+      "legacy": {
+        "enabled": false,
+        "versions": ["7", "8", "8.1"],
+        "architecture": "x64"
+      }
+    }
+  }
+}
