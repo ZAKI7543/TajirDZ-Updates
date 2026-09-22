@@ -1,107 +1,100 @@
 # مستودع تحديثات TajirDZ
 
-هذا هو مصدر التحديثات الوحيد. البرنامج المثبت عند العملاء يقرأ `version.json`
-من هذا المستودع، وينزّل الحزمة المناسبة لجهازه من صفحة [Releases](https://github.com/ZAKI7543/TajirDZ-Updates/releases).
+هذا المستودع يحمل **`version.json` فقط** — ملف الإعلان الذي يقرؤه البرنامج.
+حزم البرنامج نفسها تُستضاف على **ميديا فاير**، وروابطها توضع في version.json.
 
-> لماذا الحزم في صفحة Releases وليست مجلدًا عاديًا؟ لأن GitHub يمنع أي ملف
-> أكبر من 100MB داخل مجلدات المستودع، وحجم الحزمة ~600MB. صفحة Releases
-> تقبل حتى 2GB للملف، وهي تعمل كمجلد حزم لكل إصدار — تُملأ بالسحب والإفلات
-> من المتصفح.
+> لماذا؟ GitHub يمنع ملفات أكبر من 100MB في المستودعات، ورفع ~2.5GB إلى
+> Releases يستغرق ساعات على الشبكات البطيئة. ميديا فاير يرفع بسرعة أكبر
+> ويستضيف مجانًا — والمستخدم يحصل على الرابط الصحيح تلقائيًا من داخل البرنامج.
 
-## الحزم الخمسة لكل إصدار
+## الروابط الخمسة لكل إصدار — رابط مستقل لكل حزمة
 
-| الملف | لمن |
-|---|---|
-| `TajirDZ_X.Y.Z_Windows_Modern_Setup.exe` | المضيف (جهاز الصندوق) — ويندوز 10/11 |
-| `TajirDZ_X.Y.Z_Windows_Legacy_Setup.exe` | المضيف — ويندوز 7/8/8.1 |
-| `TajirDZ_X.Y.Z_Windows_Modern_Worker_Setup.exe` | العمال — ويندوز 10/11 |
-| `TajirDZ_X.Y.Z_Windows_Legacy_Worker_Setup.exe` | العمال — ويندوز 7/8/8.1 |
-| `TajirDZ_X.Y.Z_Android.apk` | الهاتف (تنزيل يدوي حاليًا) |
+| الحقل في version.json | الحزمة | لمن |
+|---|---|---|
+| `host.compatibility.windows.modern.downloadUrl` | `TajirDZ_X.Y.Z_Windows_Modern_Setup.exe` | المضيف — ويندوز 10/11 |
+| `host.compatibility.windows.legacy.downloadUrl` | `TajirDZ_X.Y.Z_Windows_Legacy_Setup.exe` | المضيف — ويندوز 7/8/8.1 |
+| `worker.compatibility.windows.modern.downloadUrl` | `TajirDZ_X.Y.Z_Windows_Modern_Worker_Setup.exe` | العمال — ويندوز 10/11 |
+| `worker.compatibility.windows.legacy.downloadUrl` | `TajirDZ_X.Y.Z_Windows_Legacy_Worker_Setup.exe` | العمال — ويندوز 7/8/8.1 |
+| `android.downloadUrl` | `TajirDZ_X.Y.Z_Android.apk` | الهاتف (تنزيل يدوي) |
 
-البرنامج يختار تلقائيًا حسب نوع التطبيق (مضيف/عامل) ونظام الويندوز —
-أنت لا تحدد لمن شيء، فقط ارفع الحزم الخمس.
+البرنامج يفحص نوع التطبيق (مضيف/عامل) وإصدار الويندوز، ويعرض للمستخدم
+**رابط حزمته هو فقط** — أنت لا تخاطب أحدًا، فقط ضع الروابط في أماكنها.
 
-## خطوات النشر — بالمتصفح فقط، بلا أوامر وبلا بصمات
+## خطوات النشر — بالمتصفح فقط
 
-### الخطوة 1: ارفع الحزم
+### الخطوة 1: ارفع الحزم على ميديا فاير
 
-1. افتح صفحة Releases في هذا المستودع.
-2. اضغط **Draft a new release**.
-3. في **Choose a tag** اكتب تاغ جديد بالشكل `v1.1.38` ثم **Create a new tag on publish**.
-4. اكتب العنوان ووصف التحديث.
-5. **اسحب ملفات الحزم الخمسة** إلى منطقة الإرفاق وانتظر اكتمال رفع كل واحد.
-6. اضغط **Publish release**.
+1. افتح mediafire.com وسجّل دخولك.
+2. أنشئ مجلدًا باسم الإصدار (مثلاً `TajirDZ 1.1.39`).
+3. ارفع ملفات الحزم الخمسة إليه.
+4. انسخ **رابط المشاركة** لكل ملف (زر المشاركة → نسخ الرابط).
 
-### الخطوة 2: حدّث version.json
+### الخطوة 2: حدّث version.json هنا
 
-1. افتح [version.json](https://github.com/ZAKI7543/TajirDZ-Updates/blob/main/version.json) في هذا المستودع.
+1. افتح [version.json](https://github.com/ZAKI7543/TajirDZ-Updates/blob/main/version.json).
 2. اضغط أيقونة **القلم (Edit)**.
-3. غيّر رقم الإصدار في الثلاثة مواضع (`host.version` و`worker.version` و`android.version`)،
-   ورقم الإصدار داخل روابط التنزيل (يظهر 3 مرات في كل رابط)، ووصف التحديث.
+3. عدّل: رقم الإصدار في `host.version` و`worker.version` و`android.version`،
+   ووصف التحديث، ثم **الصق كل رابط ميديا فاير في خانته** (5 روابط).
 4. اضغط **Commit changes**.
 
-**انتهى.** خلال ساعة كحد أقصى (أو فور إعادة فتح البرنامج) يرى كل العملاء التحديث.
+**انتهى.** خلال ساعة كحد أقصى (أو فور إعادة فتح البرنامج) يرى العملاء
+زر "تحديث" ويسمح لهم بالوصول لرابط حزمتهم مباشرة.
 
 ## قالب version.json
-
-انسخه كاملًا وغيّر الرقم `1.1.38` إلى الإصدار الجديد في كل المواضع،
-واكتب وصف التحديث:
 
 ```json
 {
   "releaseStatus": "active",
   "releaseDate": "2026-09-22",
   "host": {
-    "version": "1.1.38",
+    "version": "1.1.39",
     "changelog": "اكتب هنا ما الجديد في المضيف",
-    "mandatory": false,
     "showNotification": true,
     "requiresMigration": false,
     "restartRequired": true,
-    "allowPauseResume": true,
     "compatibility": {
       "windows": {
-        "modern": { "enabled": true, "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.38/TajirDZ_1.1.38_Windows_Modern_Setup.exe" },
-        "legacy": { "enabled": true, "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.38/TajirDZ_1.1.38_Windows_Legacy_Setup.exe" }
+        "modern": { "enabled": true, "downloadUrl": "الصق-رابط-ميديا-فاير-لحزمة-المضيف-الحديثة" },
+        "legacy": { "enabled": true, "downloadUrl": "الصق-رابط-ميديا-فاير-لحزمة-المضيف-القديمة" }
       }
     }
   },
   "worker": {
-    "version": "1.1.38",
+    "version": "1.1.39",
     "changelog": "اكتب هنا ما الجديد في العمال",
-    "mandatory": false,
     "showNotification": true,
     "restartRequired": true,
-    "allowPauseResume": true,
     "compatibility": {
       "windows": {
-        "modern": { "enabled": true, "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.38/TajirDZ_1.1.38_Windows_Modern_Worker_Setup.exe" },
-        "legacy": { "enabled": true, "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.38/TajirDZ_1.1.38_Windows_Legacy_Worker_Setup.exe" }
+        "modern": { "enabled": true, "downloadUrl": "الصق-رابط-ميديا-فاير-لحزمة-العمال-الحديثة" },
+        "legacy": { "enabled": true, "downloadUrl": "الصق-رابط-ميديا-فاير-لحزمة-العمال-القديمة" }
       }
     }
   },
   "android": {
-    "version": "1.1.38",
-    "downloadUrl": "https://github.com/ZAKI7543/TajirDZ-Updates/releases/download/v1.1.38/TajirDZ_1.1.38_Android.apk"
+    "version": "1.1.39",
+    "downloadUrl": "الصق-رابط-ميديا-فاير-للتطبيق"
   }
 }
 ```
 
 ملاحظات:
 
-- `releaseStatus` بقيمة `"blocked"` تسحب إصدارًا معطوبًا فورًا من كل العملاء (بدل رفع إصلاح).
-- `mandatory: true` يجعل التحديث إجباريًا — نافذة لا تُغلق حتى التثبيت.
-- حقل تحديث تريد تعطيله؟ ضع `"enabled": false` مكانه أو احذفه.
-- لا تحذف الإصدارات القديمة من Releases — هي شبكة أمان للرجوع.
+- خانة رابط تريدها معطلة؟ ضع `"enabled": false` مكانه أو احذف الخانة —
+  والبرنامج يعرض البديل المناسب أو يصمت.
+- `releaseStatus` بقيمة `"blocked"` تخفي التحديث عن كل العملاء فورًا
+  (تستخدمها لسحب إصدار معطوب).
+- إن تركت أي رابط فارغًا فلن يظهر التحديث لأحد — آمن للتعديل تدريجيًا.
+- لا تحذف إصدارات ميديا فاير القديمة — هي شبكة أمان للرجوع.
 - لا تضع أسرارًا أو مفاتيحًا في هذا المستودع — هو عام.
 
-## كيف يحدث الاستبدال دون فقدان البيانات
+## تجربة المستخدم عند العميل
 
-حزمة التحديث هي المثبّت الكامل. عند تثبيتها صامتًا:
-
-1. يرفض برنامج التثبيت أي حزمة على نظام ويندوز خاطئ قبل أن يلمس شيئًا.
-2. تُوقف قاعدة البيانات إيقافًا نظيفًا ثم كل مكونات البرنامج.
-3. تُستبدل ملفات البرنامج فقط (`TajirDZ` للمضيف، `TajirDZ Worker` للعمال).
-4. **لا تُلمس إطلاقًا**: بيانات المتجر `TajirDZ-Data` (قاعدة البيانات/المخزون/الصور/النسخ الاحتياطية) وذاكرة العرض المؤقتة `com.tajirdz.*`.
-5. تُعاد قاعدة البيانات والخادم للتشغيل تلقائيًا.
-6. قبل كل تثبيت تُنشأ نسخة احتياطية كاملة من قاعدة البيانات — وفشلها يلغي التحديث.
+1. البرنامج يفحص version.json عند الإقلاع وكل ساعة.
+2. عند وجود إصدار أحدث يظهر زر "تحديث جديد" أعلى الشاشة.
+3. الضغط عليه يعرض الوصف وزر "تحديث الآن" — يفتح رابط ميديا فاير لحزمته
+   هو (حسب نوع التطبيق وإصدار الويندوز).
+4. المستخدم ينزّل المثبّت ويشغّله — التثبيت يستبدل ملفات البرنامج فقط:
+   **بيانات المتجر `TajirDZ-Data` (المخزون/الفواتير/الصور/النسخ الاحتياطية)
+   وذاكرة العرض المؤقتة لا تُلمس إطلاقًا**، ويتعذر التثبيت على إصدار
+   ويندوز غير مطابق للحزمة.
