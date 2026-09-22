@@ -1,19 +1,33 @@
 {
-  "version": "1.1.37",
-  "channel": "stable",
-  "minimumVersion": "1.0.0",
-  "mandatory": false,
-  "showNotification": false,
-  "downloadUrl": "",
-  "sha256": "",
-  "size": "",
-  "releaseDate": "2026-09-21",
-  "changelog": "الإصدار الحالي المستقر.",
-  "differential": false,
-  "patchUrl": "",
   "releaseStatus": "active",
-  "releaseReason": "Feature",
-  "requiresMigration": false,
-  "restartRequired": true,
-  "allowPauseResume": true
+  "releaseDate": "2026-09-22",
+  "host": {
+    "version": "1.1.39",
+    "changelog": "الإصدار 1.1.39: تبويب التحديثات الجديد في الإعدادات",
+    "showNotification": true,
+    "requiresMigration": false,
+    "restartRequired": true,
+    "compatibility": {
+      "windows": {
+        "modern": { "enabled": true, "downloadUrl": "" },
+        "legacy": { "enabled": true, "downloadUrl": "" }
+      }
+    }
+  },
+  "worker": {
+    "version": "1.1.39",
+    "changelog": "الإصدار 1.1.39: تبويب التحديثات الجديد في الإعدادات",
+    "showNotification": true,
+    "restartRequired": true,
+    "compatibility": {
+      "windows": {
+        "modern": { "enabled": true, "downloadUrl": "" },
+        "legacy": { "enabled": true, "downloadUrl": "" }
+      }
+    }
+  },
+  "android": {
+    "version": "1.1.39",
+    "downloadUrl": ""
+  }
 }
