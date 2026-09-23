@@ -4,9 +4,7 @@
   "host": {
     "version": "1.1.50",
     "changelog": "الإصدار 1.1.42: تبويب التحديثا الجديد في الإعدادات",
-    "showNotification": false,
     "requiresMigration": false,
-    "restartRequired": true,
     "compatibility": {
       "windows": {
         "modern": {
@@ -23,8 +21,7 @@
   "worker": {
     "version": "1.1.55",
     "changelog": "الإصدار 1.1.39: تبويب التحديثات الجديد ي الإعدادات",
-    "showNotification": true,
-    "restartRequired": true,
+    "requiresMigration": false,
     "compatibility": {
       "windows": {
         "modern": {
@@ -40,23 +37,7 @@
   },
   "android": {
     "version": "1.1.39",
+    "changelog": "الإصدار 1.1.42: تبويب التحديثا الجديد في الإعدادات",
     "downloadUrl": ""
-  },
-  "version": "1.1.40",
-  "changelog": "الإصدار 1.1.39: تبويب التحديثات الجديد في الإعدادات",
-  "showNotification": true,
-  "restartRequired": true,
-  "compatibility": {
-    "windows": {
-      "modern": {
-        "enabled": true,
-        "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file"
-      },
-      "legacy": {
-        "enabled": true,
-        "downloadUrl": "https://www.mediafire.com/file/ieg749bh8etbw0s/TajirDZ_1.1.39_Windows_Legacy_Setup.exe/file"
-      }
-    }
-  },
-  "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file"
+  }
 }
