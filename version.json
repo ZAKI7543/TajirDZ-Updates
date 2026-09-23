@@ -21,8 +21,8 @@
     "restartRequired": true,
     "compatibility": {
       "windows": {
-        "modern": { "enabled": true, "https://www.mediafire.com/file/a8qj998jhwtjgi0/TajirDZ_1.1.39_Windows_Modern_Worker_Setup.exe/file": "" },
-        "legacy": { "enabled": true, "downloadUrl": "" }
+        "modern": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/a8qj998jhwtjgi0/TajirDZ_1.1.39_Windows_Modern_Worker_Setup.exe/file" },
+        "legacy": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/3gd37gg7876vlbj/TajirDZ_1.1.39_Windows_Legacy_Worker_Setup.exe/file" }
       }
     }
   },
