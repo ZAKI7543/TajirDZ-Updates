@@ -4,7 +4,7 @@
   "host": {
     "version": "1.1.50",
     "changelog": "الإصدار 1.1.42: تبويب التحديثا الجديد في الإعدادات",
-    "showNotification": true,
+    "showNotification": false,
     "requiresMigration": false,
     "restartRequired": true,
     "compatibility": {
