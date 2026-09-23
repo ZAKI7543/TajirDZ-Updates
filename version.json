@@ -9,8 +9,14 @@
     "restartRequired": true,
     "compatibility": {
       "windows": {
-        "modern": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file" },
-        "legacy": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/ieg749bh8etbw0s/TajirDZ_1.1.39_Windows_Legacy_Setup.exe/file" }
+        "modern": {
+          "enabled": true,
+          "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file"
+        },
+        "legacy": {
+          "enabled": true,
+          "downloadUrl": "https://www.mediafire.com/file/ieg749bh8etbw0s/TajirDZ_1.1.39_Windows_Legacy_Setup.exe/file"
+        }
       }
     }
   },
@@ -21,13 +27,36 @@
     "restartRequired": true,
     "compatibility": {
       "windows": {
-        "modern": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/a8qj998jhwtjgi0/TajirDZ_1.1.39_Windows_Modern_Worker_Setup.exe/file" },
-        "legacy": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/3gd37gg7876vlbj/TajirDZ_1.1.39_Windows_Legacy_Worker_Setup.exe/file" }
+        "modern": {
+          "enabled": true,
+          "downloadUrl": "https://www.mediafire.com/file/a8qj998jhwtjgi0/TajirDZ_1.1.39_Windows_Modern_Worker_Setup.exe/file"
+        },
+        "legacy": {
+          "enabled": true,
+          "downloadUrl": "https://www.mediafire.com/file/3gd37gg7876vlbj/TajirDZ_1.1.39_Windows_Legacy_Worker_Setup.exe/file"
+        }
       }
     }
   },
   "android": {
     "version": "1.1.39",
     "downloadUrl": ""
-  }
+  },
+  "version": "1.1.40",
+  "changelog": "الإصدار 1.1.39: تبويب التحديثات الجديد في الإعدادات",
+  "showNotification": true,
+  "restartRequired": true,
+  "compatibility": {
+    "windows": {
+      "modern": {
+        "enabled": true,
+        "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file"
+      },
+      "legacy": {
+        "enabled": true,
+        "downloadUrl": "https://www.mediafire.com/file/ieg749bh8etbw0s/TajirDZ_1.1.39_Windows_Legacy_Setup.exe/file"
+      }
+    }
+  },
+  "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file"
 }
