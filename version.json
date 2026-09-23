@@ -9,8 +9,8 @@
     "restartRequired": true,
     "compatibility": {
       "windows": {
-        "modern": { "enabled": true, "downloadUrl": "" },
-        "legacy": { "enabled": true, "downloadUrl": "" }
+        "modern": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file" },
+        "legacy": { "enabled": true, "downloadUrl": "https://www.mediafire.com/file/ieg749bh8etbw0s/TajirDZ_1.1.39_Windows_Legacy_Setup.exe/file" }
       }
     }
   },
