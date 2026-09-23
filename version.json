@@ -21,7 +21,7 @@
     }
   },
   "worker": {
-    "version": "1.1.39",
+    "version": "1.1.55",
     "changelog": "الإصدار 1.1.39: تبويب التحديثات الجديد ي الإعدادات",
     "showNotification": true,
     "restartRequired": true,
