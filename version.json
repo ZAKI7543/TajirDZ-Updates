@@ -10,7 +10,7 @@
     "compatibility": {
       "windows": {
         "modern": {
-          "enabled": true,
+          "enabled": false,
           "downloadUrl": "https://www.mediafire.com/file/2q0a5j6twfm4wxp/TajirDZ_1.1.39_Windows_Modern_Setup.exe/file"
         },
         "legacy": {
