@@ -1,3 +1,9 @@
+# 🌐 الموقع الرسمي
+
+**[tajirdz-site.tajirdz-dz.workers.dev](https://tajirdz-site.tajirdz-dz.workers.dev)** — نقطة بيع، مخزون، ديون، تقارير، ذكاء اصطناعي محلي — يعمل بلا إنترنت.
+
+---
+
 # مستودع تحديثات TajirDZ
 
 هذا المستودع يحمل **`version.json` فقط** — ملف الإعلان الذي يقرؤه البرنامج.
